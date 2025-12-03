@@ -29,7 +29,8 @@ indexmap2 = { version = "2.2.3", default-features = false, optional = true, pack
 jiff02 = { version = "0.2", default-features = false, optional = true, package = "jiff" }
 rust_decimal1 = { version = "1.13", default-features = false, optional = true, package = "rust_decimal" }
 semver1 = { version = "1.0.9", default-features = false, optional = true, package = "semver" }
-smallvec1 = { version = "1.0", default-features = false, optional = true, package = "smallvec" }
+#smallvec1 = { version = "1.0", default-features = false, optional = true, package = "smallvec" }
+smallvec = { workspace=true } 
 smol_str02 = { version = "0.2.1", default-features = false, optional = true, package = "smol_str" }
 url2 = { version = "2.0", default-features = false, optional = true, package = "url" }
 uuid1 = { version = "1.0", default-features = false, optional = true, package = "uuid" }
@@ -54,7 +55,8 @@ indexmap2 = { version = "2.0", default-features = false, features = ["serde"], p
 jiff02 = { version = "0.2", features = ["serde"], package = "jiff" }
 rust_decimal1 = { version = "1", default-features = false, features = ["serde"], package = "rust_decimal" }
 semver1 = { version = "1.0.9", default-features = false, features = ["serde"], package = "semver" }
-smallvec1 = { version = "1.0", default-features = false, features = ["serde"], package = "smallvec" }
+#smallvec1 = { version = "1.0", default-features = false, features = ["serde"], package = "smallvec" }
+smallvec1 = { workspace=true , package="smallvec" } 
 smol_str02 = { version = "0.2.1", default-features = false, features = ["serde"], package = "smol_str" }
 url2 = { version = "2.0", default-features = false, features = ["serde", "std"], package = "url" }
 uuid1 = { version = "1.0", default-features = false, features = ["serde"], package = "uuid" }
